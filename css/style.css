@@ -1,0 +1,393 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+header{
+  background-color: black;
+  font-family: helvetica;
+}
+
+.time{
+  color: white;
+  font-family: helvetica;
+}
+
+body{
+  background:
+         /* top, transparent black, faked with gradient */ 
+         linear-gradient(
+           rgba(0, 0, 0, 0.7), 
+           rgba(0, 0, 0, 0.7)
+         ),
+         /* bottom, image */
+         url(../imgs/car.jpg);
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         background-position:center;
+     }
+
+li{
+  list-style: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1224px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-item{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-branding{
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-link{
+  transition: 0.3s ease-out;
+}
+.nav-link:hover{
+  text-decoration: underline;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.card1{
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.card1:hover{
+  background-color: rgb(215, 215, 199);
+}
+
+.des,
+.price,
+.buy{
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.img{
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.des{
+  font-size: 25px;
+}
+
+.buy{
+  color: white;
+  background-color: blue;
+  display: inline-flex;
+  padding: 10px 10px;
+  margin-left: 160px;
+  transition: 0.2s;
+}
+
+.buy:hover{
+  cursor: pointer;
+  background-color: red;
+}
+
+.price{
+  font-size: 30px;
+}
+
+.card2{
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin-left: 450px;
+  margin-top: -400px;
+  transition: 0.4s;
+}
+
+.card2:hover{
+  background-color: rgb(215, 215, 199);
+}
+
+.des2,
+.price2,
+.buy{
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.des2{
+  font-size: 25px;
+}
+
+.price2{
+  font-size: 30px;
+}
+
+.img2{
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.card3{
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin-left: 900px;
+  margin-top: -400px;
+  transition: 0.4s;
+}
+
+.card3:hover{
+  background-color: rgb(215, 215, 199);
+}
+
+.des3,
+.price3,
+.buy3{
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.des3{
+  font-size: 25px;
+}
+
+.price3{
+  font-size: 30px;
+}
+
+.img3{
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+@media(max-width:1024px){
+  .hamburger{
+    display: block;
+  }
+
+  .main{
+    display: block;
+  }
+ .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+ .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+ .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+ .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+ .nav-item{
+    margin: 16px 0;
+  }
+ .nav-menu.active{
+    left: 0;
+  }
+}
+
+.card4{
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin-left: 1350px;
+  margin-top: -400px;
+  transition: 0.5s;
+}
+
+.card4:hover{
+  background-color: rgb(215, 215, 199);
+}
+
+.des4,
+.price4{
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.img4{
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.des4{
+  font-size: 25px;
+}
+
+.price4{
+  font-size: 30px;
+}
+
+.foot{
+  text-align: center;
+  font-family: monospace;
+  font-weight: 900;
+  color: white;
+  font-size: 30px;
+  background: #000;
+}
+
+@media (max-width:1297px){
+  .card3{
+    margin-top: 50px;
+    margin-left: 250px;
+  }
+  .card4{
+    margin-top: 50px;
+    margin-left: 250px;
+  }
+}
+
+@media(max-width:849px){
+   .card3{
+    margin-top: 100px;
+   }
+   .card2{
+    margin-top: 100px;
+    margin-left: 245px;
+   }
+
+   .card1{
+    margin-left: 240px;
+   }
+   .h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 90px;
+   }
+   .card4{
+    margin-top: 100px;
+    margin-left: 245px;
+  }
+}
+
+@media(max-width:647px){
+  .h1{
+    text-align: left;
+  }
+  .card1{
+    margin-left: 100px;
+  }
+  .card2{
+    margin-left: 100px;
+  }
+  .card3{
+    margin-left: 100px;
+  }
+  .card4{
+    margin-left: 100px;
+  }
+}
+
+@media(max-width:497px){
+  .h1{
+    text-align: left;
+  }
+  .card1{
+    margin-left: 50px;
+  }
+  .card2{
+    margin-left: 50px;
+  }
+  .card3{
+    margin-left: 50px;
+  }
+  .card4{
+    margin-left: 50px;
+  }
+}
+
+@media(max-width:490px){
+  .h1{
+    text-align: left;
+  }
+  .card1{
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  .card2{
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  .card3{
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  .card4{
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  .img,
+  .img2,
+  .img3,
+  .img4{
+    width: 100px;
+    height: 100px;
+  }
+  .des,
+  .des2,
+  .des3,
+  .des4{
+    font-size: 15px;
+  }
+  .buy{
+    margin-top: 0px;
+    margin-left: 110px;
+  }
+}
+
+
