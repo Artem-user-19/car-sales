@@ -7,9 +7,22 @@ header{
   font-family: helvetica;
 }
 
+a{
+  color: black;
+  text-decoration: none;
+}
+
 .time{
   color: white;
   font-family: helvetica;
+}
+
+.cards{
+  animation: cards 3s;
+}
+
+.cards-2{
+  animation: cards2 4s;
 }
 
 body{
@@ -88,10 +101,6 @@ a{
   transition: 0.4s;
 }
 
-.card1:hover{
-  background-color: rgb(215, 215, 199);
-}
-
 .des,
 .price,
 .buy{
@@ -113,10 +122,104 @@ a{
 .buy{
   color: white;
   background-color: blue;
-  display: inline-flex;
-  padding: 10px 10px;
-  margin-left: 160px;
+  padding: 13px 5px;
   transition: 0.2s;
+}
+
+.buy2{
+  color: white;
+  background-color: blue;
+  padding: 13px 5px;
+  text-align: center;
+  margin-top: 60px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.buy2:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+.buy3{
+  color: white;
+  background-color: blue;
+  padding: 13px 5px;
+  text-align: center;
+  margin-top: 63px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.buy3:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+.buy6{
+  color: white;
+  background-color: blue;
+  padding: 13px 5px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.buy6:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+.buy7{
+  color: white;
+  background-color: blue;
+  padding: 13px 5px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.buy7:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+.buy4{
+  color: white;
+  background-color: blue;
+  padding: 13px 5px;
+  text-align: center;
+  margin-top: 63px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.buy4:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+.buy5{
+  color: white;
+  background-color: blue;
+  padding: 13px 5px;
+  text-align: center;
+  margin-top: 75px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.buy5:hover{
+  background-color: red;
+  cursor: pointer;
 }
 
 .buy:hover{
@@ -135,10 +238,6 @@ a{
   margin-left: 450px;
   margin-top: -400px;
   transition: 0.4s;
-}
-
-.card2:hover{
-  background-color: rgb(215, 215, 199);
 }
 
 .des2,
@@ -170,10 +269,6 @@ a{
   margin-left: 900px;
   margin-top: -400px;
   transition: 0.4s;
-}
-
-.card3:hover{
-  background-color: rgb(215, 215, 199);
 }
 
 .des3,
@@ -243,10 +338,6 @@ a{
   transition: 0.5s;
 }
 
-.card4:hover{
-  background-color: rgb(215, 215, 199);
-}
-
 .des4,
 .price4{
   text-align: center;
@@ -275,6 +366,39 @@ a{
   color: white;
   font-size: 30px;
   background: #000;
+}
+
+@keyframes cards {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes cards2{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1629px){
+  .card4{
+    margin-top: 100px;
+    margin-left: 450px;
+  }
+  .buy7{
+    margin-top: 39px;
+  }
+  .buy6{
+    margin-top: 40px;
+  }
 }
 
 @media (max-width:1297px){
@@ -385,8 +509,22 @@ a{
     font-size: 15px;
   }
   .buy{
-    margin-top: 0px;
-    margin-left: 110px;
+    margin-top: 1px;
+  }
+  .buy2{
+    margin-top: 1px;
+  }
+  .buy4{
+    margin-top: 3px;
+  }
+  .buy6{
+    margin-top: 3px;
+  }
+  .buy5{
+    margin-top: 3px;
+  }
+  .buy7{
+    margin-top: 3px;
   }
 }
 

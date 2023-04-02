@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADA2107</title>
+    <link rel="stylesheet" href="../CssForPages/toyotaland.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading">LADA2107</h1>
+    </header>
+    <main>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="../imgs/lada2107.jpg" style="width:80%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="../imgs/lada2107(2).jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="../imgs/lada2107(3).jpg" style="width:100%">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+    </main>
+    <footer>
+        <div class="desc">
+        <h1 class="describe">Characteristics:</h1>
+        <p class="describe2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea fuga est ratione inventore, eveniet perspiciatis dolores aut quaerat, sunt illum, sapiente eaque ipsam dolor magni reprehenderit consequuntur quisquam expedita! A!</p>
+        </div>
+        <div class="car">
+            <p>-Engine square: 1.5</p>
+            <p>-Max-speed: 90 km/h</p>
+            <p>-Seats: 5</p>
+            <p>-Length:4.1 m</p>
+            <p>-Width:1.6 m</p>
+        </div>
+        <div class="buys">
+            <p class="buyit">Buy</p>
+        </div>
+    </footer>
+        <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
