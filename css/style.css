@@ -12,6 +12,23 @@ a{
   text-decoration: none;
 }
 
+.input{
+  text-align: center;
+  outline: none;
+  border-radius: 50px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px white;
+  transition: 0.1s;
+}
+
+.input:active{
+  border: 2px solid blue;
+  box-shadow: 0px 0px 10px blue;
+  background-color: blue;
+  margin-left: 22px;
+  box-shadow: 0px 0px 20px blue;
+}
+
 .time{
   color: white;
   font-family: helvetica;
@@ -19,10 +36,13 @@ a{
 
 .cards{
   animation: cards 3s;
+  margin-top: 20px;
 }
 
 .cards-2{
   animation: cards2 4s;
+  margin-top: 50px;
+  position: relative;
 }
 
 body{
@@ -56,6 +76,17 @@ a{
 
 .nav-item{
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+
+.sym{
+  display: flex;
+  cursor: pointer;
+}
+
+.icon{
+  color: white;
+  font-size: 25px;
 }
 
 .navbar{
@@ -366,6 +397,10 @@ a{
   color: white;
   font-size: 30px;
   background: #000;
+}
+
+.hide{
+  display: none;
 }
 
 @keyframes cards {
